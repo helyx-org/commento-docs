@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "insert-logo",
+    "-sharing",
+    "-fontsettings",
+    "prism",
+    "-highlighting",
+    "page-toc",
+    "hints"
+  ],
+
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "https://user-images.githubusercontent.com/7521600/33375172-14b21f68-d52f-11e7-9b30-477682bccf8f.png",
+      "style": "width: 100%;"
+    },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-solarizedlight.css"
+      ]
+    },
+    "page-toc": {
+      "showByDefault": false
+    }
+  }
+}

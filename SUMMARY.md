@@ -1,0 +1,15 @@
+# Summary
+
+- [Introduction](README.md)
+  - [Choosing between CE and EE](ce-or-ee.md)
+- [Getting started](getting-started.md)
+  - [System requirements](system-requirements.md)
+  - [Installation](installation.md)
+    - [Install with Docker](installation-docker.md)
+    - [Install using releases](installation-releases.md)
+    - [Install from source](installation-source.md)
+  - [Embedding Commento](embedding-commento.md)
+  - [Configuration](configuration.md)
+- [Contributing to Commento](contributing.md)
+  - [Setting up your environment](dev-env.md)
+  - [Running tests](running-tests.md)
