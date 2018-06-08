@@ -1,10 +1,7 @@
 pages:
   stage: deploy
-  image: debian:buster
+  image: node:10.4
   script:
-    - apt update
-    - apt install -y curl gnupg
-    - curl -sL https://deb.nodesource.com/setup_10.x | bash -
     - npm install -g gitbook
     - gitbook install
     - gitbook build
