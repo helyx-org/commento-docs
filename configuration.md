@@ -15,6 +15,7 @@ $ ./commento-ce
 |---|---|
 | `COMMENTO_ORIGIN` | **Required.** This should be set to the subdomain or the IP address hosting Commento. All API requests will go to this server. |
 | `COMMENTO_POSTGRES` | **Required.** A PostgreSQL server URI, including the database name. |
+| `COMMENTO_BIND_ADDRESS` | Optional, defaults to 127.0.0.1. The address to bind the Commento server to. If you're running Commento Dockerised, there is no need to change it, it's already setup correctly. |
 | `COMMENTO_PORT` | Optional, defaults to 8080. The port to bind the Commento server to. If you're running Commento Dockerised, this is not the port you want to change. |
 | `COMMENTO_CDN_PREFIX` | Optional, defaults to using `COMMENTO_ORIGIN`. If you want to use a CDN with Commento (like AWS Cloudfront, for example) for faster delivery of assets, you can. All static assets will be served from this domain. |
 | `COMMENTO_STATIC` | Optional, defaults to the same directory as the binary. If you want to store the binary in a different directory from the static assets, set this directory to point to the static assets (HTML, JS, CSS, email templates and database migrations). |
