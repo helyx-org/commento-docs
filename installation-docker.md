@@ -18,7 +18,7 @@ Containers: 48
 
 The primary advantage with Docker Compose is that it's dead easy to get started; with a single `docker-compose up` command, you can start Commento. No pulling dependencies manually, no setting up runtime environments, no starting background services. It's dead simple. If you don't have a running PostgreSQL server around, we recommend this.
 
-An example and reference `docker-compose.yml` for Commento CE is given below. The [latest version](https://gitlab.com/commento/commento-ce/blob/master/LICENSE) of the configuration file can always be found in the source repository.
+An example and reference `docker-compose.yml` for Commento CE is given below. The [latest version](https://gitlab.com/commento/commento-ce/blob/master/docker-compose.yml) of the configuration file can always be found in the source repository.
 
 ```yaml
 version: '3'
