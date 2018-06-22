@@ -15,10 +15,18 @@ $ ./commento-ce
 |---|---|
 | `COMMENTO_ORIGIN` | This should be set to the subdomain or the IP address hosting Commento. All API requests will go to this server. **Required.** |
 | `COMMENTO_POSTGRES` | A PostgreSQL server URI, including the database name. **Required.** |
-| `COMMENTO_BIND_ADDRESS` | The address to bind the Commento server to. If you're running Commento Dockerised, there is no need to change it, it's already setup correctly. **Optional**, defaults to 127.0.0.1. |
-| `COMMENTO_PORT` | The port to bind the Commento server to. If you're running Commento Dockerised, this is not the port you want to change. **Optional**, defaults to 8080. |
+| `COMMENTO_BIND_ADDRESS` | The address to bind the Commento server to. **Optional**, defaults to 127.0.0.1. |
+| `COMMENTO_PORT` | The port to bind the Commento server to. **Optional**, defaults to 8080. |
 | `COMMENTO_CDN_PREFIX` | If you want to use a CDN with Commento (like AWS Cloudfront, for example) for faster delivery of assets, you can. All static assets will be served from this domain. **Optional**, defaults to using `COMMENTO_ORIGIN`. |
 | `COMMENTO_STATIC` | If you want to store the binary in a different directory from the static assets, set this directory to point to the static assets (HTML, JS, CSS, email templates and database migrations). **Optional**, defaults to the same directory as the binary. |
 | `COMMENTO_GZIP_STATIC` | If set to true, all static content will be served GZipped. If you're not using something like a reverse proxy (like nginx, for example), we recommend you set this to `true`. **Optional**, defaults to `false`. |
 | `COMMENTO_SMTP_USERNAME`<br>`COMMENTO_SMTP_PASSWORD`<br>`COMMENTO_SMTP_HOST`<br>`COMMENTO_SMTP_PORT`<br>`COMMENTO_SMTP_FROM_ADDRESS` | SMTP credentials and configuration for the server should use to send emails. **Optional**, defaults to emails disabled. |
 | `COMMENTO_OAUTH_GOOGLE_KEY`<br>`COMMENTO_OAUTH_GOOGLE_SECRET` | Google OAuth v2 credentials that you get from their developers portal. **Optional**, defaults to Google login disabled. |
+
+{% hint style='tip' %}
+##### When in Docker
+
+If you're running Commento Dockerised, you don't need to change `COMMENTO_BIND_ADDRESS` and `COMMENTO_PORT`. Instead set the external bind address and port with the `-p` flag in Docker.
+
+For example, `-p commento.example.com:9000:8080` will bind Commento to `commento.example.com` on port `9000`.
+{% endhint %}
