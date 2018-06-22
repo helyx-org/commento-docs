@@ -10,6 +10,8 @@
     - [Install from source](installation-source.md)
   - [Embedding Commento](embedding-commento.md)
   - [Configuration](configuration.md)
+    - [Configuring the backend](configuration-backend.md)
+    - [Configuring the frontend](configuration-frontend.md)
 - [Contributing to Commento](contributing.md)
   - [Setting up your environment](dev-env.md)
   - [Running tests](running-tests.md)
