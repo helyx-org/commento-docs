@@ -8,5 +8,5 @@ Setting up your development environment varies a lot between different operating
 
 ##### Arch Linux
 
- - Install [`make`](https://www.archlinux.org/packages/core/x86_64/make/) [`go`](https://www.archlinux.org/packages/extra/x86_64/go/) [`npm`](https://www.archlinux.org/packages/community/any/npm/) [`uglify-js`](https://www.archlinux.org/packages/community/any/uglify-js/) [`docker`](https://www.archlinux.org/packages/community/x86_64/docker/) [`docker-compose`](https://www.archlinux.org/packages/community/any/docker-compose/) with `pacman`.
- - Install [`html-minifier`](https://www.npmjs.com/package/html-minifier) [`sass`](https://www.npmjs.com/package/sass) with `npm`. Unfortunately, these two aren't in the AUR either.
+ - Install [`bash`](https://www.archlinux.org/packages/core/x86_64/bash/) [`make`](https://www.archlinux.org/packages/core/x86_64/make/) [`go`](https://www.archlinux.org/packages/extra/x86_64/go/) [`npm`](https://www.archlinux.org/packages/community/any/npm/) [`uglify-js`](https://www.archlinux.org/packages/community/any/uglify-js/) [`docker`](https://www.archlinux.org/packages/community/x86_64/docker/) [`docker-compose`](https://www.archlinux.org/packages/community/any/docker-compose/) with pacman.
+ - Install [`html-minifier`](https://www.npmjs.com/package/html-minifier) [`sass`](https://www.npmjs.com/package/sass) with `npm`. Unfortunately, these two aren't in the AUR yet.
