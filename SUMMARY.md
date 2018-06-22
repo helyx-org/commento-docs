@@ -15,3 +15,4 @@
 - [Contributing to Commento](contributing.md)
   - [Setting up your environment](dev-env.md)
   - [Running tests](running-tests.md)
+  - [Development Guidelines](development-guidelines.md)
