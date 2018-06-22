@@ -2,9 +2,7 @@
 
 Setting up your development environment varies a lot between different operating systems and distributions. Given below are the setups for some of them. If you don't find your platform here, unfortunately, you're on your own to translate the commands for a different platform (which is generally pretty easy) to yours. If that happens to be the case, please consider [improving this document](https://gitlab.com/commento/docs) for future developers.
 
-{% hint style='tip' %}
-If you contribute, please keep this list in a sorted order.
-{% endhint %}
+<!-- Keep this list sorted -->
 
 #### Linux
 
