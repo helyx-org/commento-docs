@@ -26,7 +26,7 @@ Here is the list of backend configuration settings available.
 | `COMMENTO_STATIC` | If you want to store the binary in a different directory from the static assets, set this directory to point to the static assets (HTML, JS, CSS, email templates and database migrations). **Optional**, defaults to the same directory as the binary. |
 | `COMMENTO_GZIP_STATIC` | If set to true, all static content will be served GZipped. If you're not using something like a reverse proxy (like nginx, for example), we recommend you set this to `true`. **Optional**, defaults to `false`. |
 | `COMMENTO_SMTP_USERNAME`<br>`COMMENTO_SMTP_PASSWORD`<br>`COMMENTO_SMTP_HOST`<br>`COMMENTO_SMTP_PORT`<br>`COMMENTO_SMTP_FROM_ADDRESS` | SMTP credentials and configuration for the server should use to send emails. **Optional**, defaults to emails disabled. |
-| `COMMENTO_OAUTH_GOOGLE_KEY`<br>`COMMENTO_OAUTH_GOOGLE_SECRET` | Google OAuth v2 credentials that you get from their developers portal. **Optional**, defaults to Google login disabled. |
+| `COMMENTO_GOOGLE_KEY`<br>`COMMENTO_GOOGLE_SECRET`        | Google OAuth v2 credentials that you get from their developers portal. **Optional**, defaults to Google login disabled. |
 
 {% hint style='info' %}
 ##### Precedence in configuration files
