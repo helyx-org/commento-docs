@@ -2,7 +2,7 @@
 
 #### Introduction
 
-Thank you for choosing to contribute to Commento. There are, however, certain guidelines we'd like for the contributors to follow. If you're a newcomer to open source and you haven't contributed to other projects or used [Git](https://docs.gitlab.com/ee/gitlab-basics/command-line-commands.html) before, you should consult the [newcomer docs](newcomers.md) first.
+Thank you for choosing to contribute to Commento. There are, however, certain [guidelines](development-guidelines.md) we'd like for the contributors to follow. If you're a newcomer to open source and you haven't contributed to other projects or used [Git](https://docs.gitlab.com/ee/gitlab-basics/command-line-commands.html) before, you should make yourself familiar before proceeding; there are tons of tutorials to get started with Git.
 
 #### How do I start contributing?
 
