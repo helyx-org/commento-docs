@@ -2,7 +2,7 @@
 
 #### Introduction
 
-To install Commento from source, you need to [install the developer environment](dev-env.md) first. Once you've done that, you can go ahead and build the production binaries. The rest of this tutorial assumes you have all the necessary tools installed.
+To install Commento from source, you need to [install the developer environment](development-environment.md) first. Once you've done that, you can go ahead and build the production binaries. The rest of this tutorial assumes you have all the necessary tools installed.
 
 Note that this option is only possible in Commento CE.
 

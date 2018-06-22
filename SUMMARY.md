@@ -13,6 +13,6 @@
     - [Configuring the backend](configuration-backend.md)
     - [Configuring the frontend](configuration-frontend.md)
 - [Contributing to Commento](contributing.md)
-  - [Setting up your environment](dev-env.md)
+  - [Setting up your environment](development-environment.md)
   - [Running tests](running-tests.md)
   - [Development Guidelines](development-guidelines.md)
