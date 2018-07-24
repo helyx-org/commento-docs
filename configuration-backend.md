@@ -30,7 +30,7 @@ Here is the list of backend configuration settings available.
 | `COMMENTO_GOOGLE_KEY`<br>`COMMENTO_GOOGLE_SECRET`        | Google OAuth v2 credentials that you get from their developers portal. **Optional**, defaults to Google login disabled. |
 
 {% hint style='info' %}
-##### Precedence in configuration files
+##### Precedence of configuration files
 
 If you're specifying a configuration file using `COMMENTO_CONFIG_FILE`, note that it will have lower precedence than environment variables.
 
