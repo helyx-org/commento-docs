@@ -23,6 +23,7 @@ Here is the list of backend configuration settings available.
 | `COMMENTO_BIND_ADDRESS` | The address to bind the Commento server to. **Optional**, defaults to 127.0.0.1. |
 | `COMMENTO_PORT` | The port to bind the Commento server to. **Optional**, defaults to 8080. |
 | `COMMENTO_CDN_PREFIX` | If you want to use a CDN with Commento (like AWS Cloudfront, for example) for faster delivery of assets, you can. All static assets will be served from this domain. **Optional**, defaults to using `COMMENTO_ORIGIN`. |
+| `COMMENTO_FORBID_NEW_OWNERS`| If you want to forbid the creation of new owners who can set up domains, set this variable to `true`. Otherwise, to allow others to create accounts, set this to `false`. **Optional**, defaults to `false`. |
 | `COMMENTO_STATIC` | If you want to store the binary in a different directory from the static assets, set this directory to point to the static assets (HTML, JS, CSS, email templates and database migrations). **Optional**, defaults to the same directory as the binary. |
 | `COMMENTO_GZIP_STATIC` | If set to true, all static content will be served GZipped. If you're not using something like a reverse proxy (like nginx, for example), we recommend you set this to `true`. **Optional**, defaults to `false`. |
 | `COMMENTO_SMTP_USERNAME`<br>`COMMENTO_SMTP_PASSWORD`<br>`COMMENTO_SMTP_HOST`<br>`COMMENTO_SMTP_PORT`<br>`COMMENTO_SMTP_FROM_ADDRESS` | SMTP credentials and configuration for the server should use to send emails. **Optional**, defaults to emails disabled. |
