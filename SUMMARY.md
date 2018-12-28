@@ -1,7 +1,6 @@
 # Summary
 
 - [Introduction](README.md)
-  - [Choosing between CE and EE](ce-or-ee.md)
 - [Getting started](getting-started.md)
   - [System requirements](system-requirements.md)
   - [Installation](installation.md)
