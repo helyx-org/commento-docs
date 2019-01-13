@@ -1,4 +1,6 @@
 {
+  "title": "Commento",
+
   "plugins": [
     "insert-logo",
     "-sharing",
@@ -6,7 +8,8 @@
     "prism",
     "-highlighting",
     "page-toc",
-    "hints"
+    "hints",
+    "redirect"
   ],
 
   "pluginsConfig": {

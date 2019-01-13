@@ -8,13 +8,8 @@ Commento uses Go for the backend and we include a comprehensive test suite (not 
 Set up `COMMENTO_POSTGRES` with a database name that's different from the one you're using for production. Tests will clean the database and delete all data. You shouldn't be running tests on production machines in any case, but it's worth mentioning.
 {% endhint %}
 
-To execute all tests automatically, run the following commands from the source directory.
+To execute all tests automatically, run the following from the project's root directory.
 
 ```bash
-$ cd api
-$ go test -v
+$ make test
 ```
-
-{% hint style='tip' %}
-This will be *very* noisy (especially so if you have errors). If you just want to know if all tests passed, remove the `-v` flag.
-{% endhint %}

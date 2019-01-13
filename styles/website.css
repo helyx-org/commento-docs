@@ -3,6 +3,8 @@
 * {
   font-family: 'Source Sans Pro', sans-serif;
   text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  font-weight: 400;
 }
 
 code span {
@@ -40,6 +42,15 @@ code span {
   font-size: 15px;
 }
 
+.book-summary ul.summary li ul {
+  padding-left: 15px;
+}
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+  margin-left: -200px;
+  padding-left: 215px;
+}
+
 .book-summary ul.summary li.active>a {
   color: #1e2127;
   font-weight: bold;
@@ -72,5 +83,43 @@ h1>a {
 }
 
 .markdown-section code {
-  padding: 0px;
+  background-color: #fdf6e3 !important;
+  padding: 2px;
+  margin: -2px;
+  border-radius: 3px;
+  background: none;
+  font-family: 'Source Code Pro', monospace !important;
+  font-size: 14px;
+}
+
+.hints-container p {
+  margin: 0px 0px;
+}
+
+.markdown-section code::after, .markdown-section code::before {
+  letter-spacing: 0;
+  content: "";
+}
+
+.markdown-section .sha {
+  font-family: 'Source Code Pro', monospace !important;
+  font-size: 10px;
+  margin-top: -13px;
+  color: #777777;
+}
+
+.markdown-section .sha::before {
+  font-family: 'Source Sans Pro', serif !important;
+  content: "SHA256: ";
+  font-size: 10px;
+  font-weight: 700;
+  color: #777777;
+}
+
+summary:before {
+  display: inline;
+  float: left;
+  content: "[Expand]";
+  color: #4183c4;
+  margin-right: 8px;
 }

@@ -6,7 +6,7 @@ Commento's backend is configured by a set of environment variables. If you're ru
 
 ```bash
 $ export COMMENTO_ORIGIN=commento.example.com
-$ ./commento-ce
+$ ./commento
 ```
 
 You can also configure Commento using a configuration file specified with `COMMENTO_CONFIG_FILE`. You can find specifications for this file in the [section on configuration files](#configuration-file).
@@ -29,25 +29,21 @@ Here is the list of backend configuration settings available.
 | `COMMENTO_SMTP_USERNAME`<br>`COMMENTO_SMTP_PASSWORD`<br>`COMMENTO_SMTP_HOST`<br>`COMMENTO_SMTP_PORT`<br>`COMMENTO_SMTP_FROM_ADDRESS` | SMTP credentials and configuration for the server should use to send emails. **Optional**, defaults to emails disabled. |
 | `COMMENTO_GOOGLE_KEY`<br>`COMMENTO_GOOGLE_SECRET`        | Google OAuth v2 credentials that you get from their developers portal. **Optional**, defaults to Google login disabled. |
 
-{% hint style='info' %}
-##### Precedence of configuration files
-
-If you're specifying a configuration file using `COMMENTO_CONFIG_FILE`, note that it will have lower precedence than environment variables.
-
-For example, if you specify the port to be `4000` in your configuration file, and you also set the `COMMENTO_PORT=5000` environment variable, Commento will use `5000` as the port to bind the server to.
-{% endhint %}
-
 {% hint style='tip' %}
-##### When in Docker
+**When in Docker**
 
 If you're running Commento Dockerised, you don't need to change `COMMENTO_BIND_ADDRESS` and `COMMENTO_PORT`. Instead set the external bind address and port with the `-p` flag in Docker.
-
-For example, `-p commento.example.com:9000:8080` will bind Commento to `commento.example.com` on port `9000`.
 {% endhint %}
 
 #### Configuration file
 
-With the `COMMENTO_CONFIG_FILE` environment variable, you can specify a configuration file. You can use this file to store secrets and credentials without exposing them in the `./commento-ce` invocation command. For example, a Docker secret can be created and mounted inside the container's filesystem, and Commento can read from this file.
+With the `COMMENTO_CONFIG_FILE` environment variable, you can specify a configuration file. You can use this file to store secrets and credentials without exposing them in the `./commento` invocation command. For example, a Docker secret can be created and mounted inside the container's filesystem, and Commento can read from this file.
+
+{% hint style='info' %}
+**Precedence**
+
+If you're specifying a configuration file using `COMMENTO_CONFIG_FILE`, note that it will have lower precedence than environment variables.
+{% endhint %}
 
 The format for the configutation file is quite simple:
 
@@ -83,5 +79,5 @@ Say we store this file in `/etc/commento_config`. Then, we can include this file
 
 ```
 $ export COMMENTO_CONFIG_FILE=/etc/commento_config
-$ ./commento-ce
+$ ./commento
 ```

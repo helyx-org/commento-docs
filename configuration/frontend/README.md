@@ -4,21 +4,6 @@
 
 Commento's frontend configuration allows you to modify the appearance of the embedded comments box. For example, you can specifying a custom CSS stylesheet to override Commento's default appearance to match the look and feel of your website. In this page, we document how to embed Commento in your website and the exhaustive list of frontend settings you can configure.
 
-#### Embedding Commento on your website
-
-For the sake of examples, let's assume you're hosting Commento at `http://commento.example.com` (you can change this [in the backend](configuration-backend.md)). First, [create an account](http://commento.example.com/signup) in the dashboard (replace the link with your domain). Following this, [log in](http://commento.example.com/login) with your credentials. Next, use the button on the left hand side to register your domain.
-
-<p style="text-align: center"><img src="register-your-domain.png" width=400></img></p>
-
-You can now embed Commento in your domain with a few lines of simple HTML.
-
-```
-<script defer
-  src="http://commento.example.com/js/commento.js">
-</script>
-<div id="commento"></div>
-```
-
 #### Configuring settings
 
 You can configure additional frontend settings by adding `data` attributes to the `<script>` tag. For example, to specify custom CSS styling, you can add a `data-css-override` attribute as follows:
