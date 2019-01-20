@@ -23,3 +23,9 @@ Thank you for choosing to contribute to Commento. There are, however, certain [g
 #### I've made a mess of it
 
 In the [words](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#you-ve-made-a-mess-of-it) of Linus Torvalds, that's okay, we all do. [Join us in IRC](https://irc.commento.io), and we'll help you out. Make sure you've read the documentation beforehand.
+
+#### Free Commento.io access
+
+[Commento.io](https://commento.io) is the hosted, cloud version of Commento. The service costs me money to host and maintain; as a result, normally, you have to pay a monthly subscription fee.
+
+Commento is an [open source project](https://gitlab.com/commento) and it would not exist without its contributors. As a thank you, I'm very happy to offer free, perpetual Commento.io access in exchange for non-trivial patches. Once your merge request has been accepted and merged, [email me](mailto:adtac@commento.io) to apply the waiver to your account. What's trivial and what's non-trivial is entirely at my discretion; please don't abuse this.
