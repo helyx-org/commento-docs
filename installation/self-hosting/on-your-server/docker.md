@@ -53,7 +53,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
-      - postgres_data_volume:/var/lib/postgres
+      - postgres_data_volume:/var/lib/postgresql/data
 
 volumes:
   postgres_data_volume:
