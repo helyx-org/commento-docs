@@ -13,7 +13,13 @@ Unfortunately, Commento is not currently available on some distributions; in the
 <!-- Unfortunately, gitbook does not render markdown inside HTML !-->
 <details><summary><h6>Arch Linux</h6></summary>
 <p>
-You should install the <a href="https://aur.archlinux.org/packages/commento-ce-git/"><code>commento-ce-git</code></a> package from AUR. You can use an AUR-helper like <a href="https://aur.archlinux.org/packages/yay/"><code>yay</code></a> to make installation and future updates streamlined. Alternatively, you can use plain ol' <code>makepkg</code> as well.
+You should install the <a href="https://aur.archlinux.org/packages/commento/"><code>commento</code></a> package from AUR. You can use an AUR-helper like <a href="https://aur.archlinux.org/packages/yay/"><code>yay</code></a> to make installation and future updates streamlined. Alternatively, you can use plain ol' <code>makepkg</code> as well.
+</p>
+</details>
+
+<details><summary><h6>CentOS / Fedora</h6></summary>
+<p>
+You should use this <a href="https://copr.fedorainfracloud.org/coprs/daftaupe/commento/"><code>repository</code></a>. Then download the appropriate ".repo" file depending on your distribution.
 </p>
 </details>
 
