@@ -8,9 +8,13 @@ Commento is pretty lightweight, but we recommend having at least 64 MB of free R
 
 Commento has been verified to be working on the following hardware architectures: `amd64`, `x86`
 
-#### Supported operating systems
+#### Software requirements
 
-##### Linux
+To run Commento, you will need access to a PostgreSQL database version 9.5 or later. There aren't any other software requirements, unless you're [compiling from source](/installation/self-hosting/on-your-server/compiling-source.md).
+
+##### Supported operating systems
+
+###### Linux
 
 Nearly every Linux distribution should be able to run Commento, as long as there's an accessible PostgreSQL server.
 
@@ -18,14 +22,14 @@ Occasionally, using [release binaries](/installation/self-hosting/on-your-server
 
 Commento has been verified to be working on the following distributions: Arch Linux, Debian 9.4
 
-##### *BSD
+###### *BSD
 
 No data available yet. Please consider editing [this document](https://gitlab.com/commento/docs) with your discoveries.
 
-##### macOS
+###### macOS
 
 No data available yet. Please consider editing [this document](https://gitlab.com/commento/docs) with your discoveries.
 
-##### Windows
+###### Windows
 
 No data available yet. Please consider editing [this document](https://gitlab.com/commento/docs) with your discoveries.
