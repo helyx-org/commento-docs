@@ -4,7 +4,7 @@ The Go programming language supports a fairly [wide range of operating systems a
 
 #### Hardware requirements
 
-Commento is pretty lightweight, but we recommend having at least 512 MB of RAM and at least 30 MB of free disk space. This does not include the [requirements for running the PostgreSQL server](http://documentation.commvault.com/commvault/v11/article?p=3066.htm). You may, of course, choose to use a separate server or a cloud provider for the PostgreSQL database.
+Commento is pretty lightweight, but we recommend having at least 64 MB of free RAM and at least 30 MB of free disk space. This does not include the [requirements for running the PostgreSQL server](http://documentation.commvault.com/commvault/v11/article?p=3066.htm). You may, of course, choose to use a separate server or a cloud provider for the PostgreSQL database.
 
 Commento has been verified to be working on the following hardware architectures: `amd64`, `x86`
 
