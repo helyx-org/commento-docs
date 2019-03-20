@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700');
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Ubuntu+Mono:400,700');
 
 * {
   font-family: 'Source Sans Pro', sans-serif;
@@ -8,8 +8,8 @@
 }
 
 code span {
-  font-family: 'Source Code Pro', monospace !important;
-  font-size: 14px !important;
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-size: 15px !important;
   letter-spacing: 0px;
 }
 
@@ -88,8 +88,8 @@ h1>a {
   margin: -2px;
   border-radius: 3px;
   background: none;
-  font-family: 'Source Code Pro', monospace !important;
-  font-size: 14px;
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-size: 15px;
 }
 
 .hints-container p {
@@ -101,8 +101,73 @@ h1>a {
   content: "";
 }
 
+.markdown-section .setting-right {
+  float: right;
+  color: #f08c00;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 0px 4px 0px 4px;
+}
+
+.markdown-section .setting-title {
+  background: none;
+  color: #1c7ed6;
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.markdown-section .setting-possible::before,
+.markdown-section .setting-example::before {
+  content: "Example:";
+  margin-right: 6px;
+  display: inline;
+  color: #37b24d;
+  font-weight: 700;
+  font-family: 'Ubuntu Mono', monospace !important;
+  position: absolute;
+  left: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.markdown-section .setting-possible::before {
+  content: "Allowed:";
+  color: #e64980;
+}
+
+.markdown-section .setting-possible,
+.markdown-section .setting-example {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: none;
+  margin-top: 0px;
+  font-family: 'Ubuntu Mono', monospace !important;
+  color: #666666;
+  font-size: 14px;
+  position: relative;
+  padding-left: 70px;
+}
+
+.red {
+  color: #ffe3e3 !important;
+  background: #fa5252;
+}
+
+.markdown-section .setting-example code {
+  color: #1c7ed6;
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 .markdown-section .sha {
-  font-family: 'Source Code Pro', monospace !important;
+  font-family: 'Ubuntu Mono', monospace !important;
   font-size: 10px;
   margin-top: -13px;
   color: #777777;
