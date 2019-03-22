@@ -22,6 +22,10 @@ pre.gray {
   color: #909090;
 }
 
+.book-summary {
+  width: 350px;
+}
+
 .navigation {
   display: none;
 }
