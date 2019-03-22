@@ -13,6 +13,15 @@ code span {
   letter-spacing: 0px;
 }
 
+code.bold {
+  font-weight: 700;
+  color: #444444;
+}
+
+pre.gray {
+  color: #909090;
+}
+
 .navigation {
   display: none;
 }
