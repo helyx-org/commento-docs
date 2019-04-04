@@ -15,7 +15,7 @@ You can configure additional frontend settings by adding `data` attributes to th
 <div id="commento"></div>
 ```
 
-#### Confiuration settings
+#### Configuration settings
 
 <div class="setting-right">Optional</div>
 <div class="setting-title">data-css-override</div>
