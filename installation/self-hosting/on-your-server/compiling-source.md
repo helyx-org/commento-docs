@@ -2,7 +2,7 @@
 
 #### Introduction
 
-To install Commento from source, first [set up your environment](development-environment.md) first. Once you've done that, you can go ahead and build the project. The rest of this tutorial assumes you have all the necessary tools installed.
+To install Commento from source, first [set up your environment](/contributing/development-environment.md) first. Once you've done that, you can go ahead and build the project. The rest of this tutorial assumes you have all the necessary tools installed.
 
 #### Compiling Commento
 
