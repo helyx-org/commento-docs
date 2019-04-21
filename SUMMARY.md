@@ -16,6 +16,7 @@
     - [Embed on your Website](installation/self-hosting/embed-on-your-website/README.md)
 - [Configuring Commento](configuration/README.md)
   - [Frontend](configuration/frontend/README.md)
+    - [Single Sign-On](configuration/frontend/sso.md)
     - [Displaying Comment Count Links](configuration/frontend/count.md)
   - [Backend](configuration/backend/README.md)
 - [Contributing to Commento](contributing/README.md)

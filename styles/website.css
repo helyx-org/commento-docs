@@ -5,9 +5,10 @@
   text-rendering: optimizeLegibility;
   font-variant-ligatures: none;
   font-weight: 400;
+  letter-spacing: normal;
 }
 
-code span {
+code, code span {
   font-family: 'Ubuntu Mono', monospace !important;
   font-size: 15px !important;
   letter-spacing: 0px;
