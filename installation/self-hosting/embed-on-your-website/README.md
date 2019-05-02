@@ -12,3 +12,11 @@ If your Commento instance is available at `commento.example.com`, embed the foll
   src="http://commento.example.com/js/commento.js">
 </script>
 ```
+
+{% hint style='tip' %}
+Commento uses JavaScript to dynamically fetch and display comments. You may want to add a `<noscript>` tag in case the user has disabled JavaScript in their web browser to let them know that. For example, add the following after the `<script>` snippet.
+
+```html
+<noscript>Please enable JavaScript to load the comments.</noscript>
+```
+{% endhint %}
