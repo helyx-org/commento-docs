@@ -1,14 +1,24 @@
-#### Latest Release &ndash;&nbsp; `v1.6.2`
+#### Latest Release &ndash;&nbsp; `v1.7.0`
 
- - [**Linux** &ndash;&nbsp; `amd64` &ndash;&nbsp; `v1.6.2`](https://commento-release.s3.amazonaws.com/commento-linux-amd64-v1.6.2.tar.gz)  
+ - [**Linux** &ndash;&nbsp; `amd64` &ndash;&nbsp; `v1.7.0`](https://commento-release.s3.amazonaws.com/commento-linux-amd64-v1.7.0.tar.gz)  
+   `commento-linux-amd64-v1.7.0.tar.gz`  
+   <p class="sha">a4865eae795377550487480e12176d27b78f35462e1899ed1706bbbcd8f7190b</p>
+
+ - [**Source Code** &ndash;&nbsp; `v1.7.0`](https://gitlab.com/commento/commento/-/archive/v1.7.0/commento-v1.7.0.tar.gz)  
+   `commento-v1.7.0.tar.gz`  
+   <p class="sha">65396c85358b16d53aec545feefc31a7379d70ace796da27d6133f2821137fc7</p>
+
+#### Previous Releases
+
+##### `v1.6.2`
+
+ - [**Linux** &ndash;&nbsp; `amd64`](https://commento-release.s3.amazonaws.com/commento-linux-amd64-v1.6.2.tar.gz)  
    `commento-linux-amd64-v1.6.2.tar.gz`  
    <p class="sha">af0eea3033e51252e991724d68f78a26ec0b16bf986428aac5d1c74a9693e91e</p>
 
- - [**Source Code** &ndash;&nbsp; `v1.6.2`](https://gitlab.com/commento/commento/-/archive/v1.6.2/commento-v1.6.2.tar.gz)  
+ - [**Source Code**](https://gitlab.com/commento/commento/-/archive/v1.6.2/commento-v1.6.2.tar.gz)  
    `commento-v1.6.2.tar.gz`  
    <p class="sha">28728b24c6b5c19dce492cc751f48193129ec1160472abcdaac599719362fa61</p>
-
-#### Previous Releases
 
 ##### `v1.5.0`
 
