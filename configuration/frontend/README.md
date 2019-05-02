@@ -40,3 +40,12 @@ Commento automatically initialises itself when the page is loaded. If you prefer
 By default, Commento looks for a `<div>` with `id="commento"`. If you want to load Commento in a different element, you can set this attribute to the ID of that element.
 
 <div class="setting-example">data-id-root="different-element"</div>
+
+---
+
+<div class="setting-right">Optional</div>
+<div class="setting-title">data-no-fonts</div>
+
+By default, Commento uses the Source Sans Pro font to present a good design out-of-the-box. If you'd like to disable this so that Commento never loads the font files, you can set this to true. By default, this is true. Available since v1.7.0.
+
+<div class="setting-possible">true, false</div>
