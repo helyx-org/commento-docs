@@ -4,12 +4,13 @@
 
 Commento's frontend configuration allows you to modify the appearance of the embedded comments box. For example, you can specifying a custom CSS stylesheet to override Commento's default appearance to match the look and feel of your website. In this page, we document how to embed Commento in your website and the exhaustive list of frontend settings you can configure.
 
-You can configure additional frontend settings by adding `data` attributes to the `<script>` tag. For example, to specify custom CSS styling, you can add a `data-css-override` attribute as follows:
+You can configure additional frontend settings by adding `data` attributes to the `<script>` tag. For example, to specify custom CSS styling, you can add the `data-css-override` and `data-auto-init` attributes as follows:
 
 ```
 <script defer
   src="http://commento.example.com/js/commento.js"
-  data-css-override="http://example.com/my-custom-styling.css">
+  data-css-override="http://example.com/my-custom-styling.css"
+  data-auto-init="true">
 </script>
 <div id="commento"></div>
 ```
