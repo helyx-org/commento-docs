@@ -17,3 +17,36 @@ When the `count.js` snippet is included, Commento would automatically search for
 <pre class="gray">
 &lt;a href="https://example.com/foo<b><code class="bold">#commento</code></b>"&gt;<b><code class="bold">12 comments</code></b>&lt;/a&gt;
 </pre>
+
+#### Configuration settings
+
+<div class="setting-right">Optional</div>
+<div class="setting-title">data-page-id</div>
+
+When this attribute is set on the `<a>` tag, its value will be used as the identifier when fetching the number of comments. Must be identical to the `data-page-id` mentioned in the [frontend configuration page](/configuration/frontend/).
+
+---
+
+<div class="setting-right">Optional</div>
+<div class="setting-title">data-custom-text</div>
+
+When this attribute is set on the `<script>` tag, its value will be evaluated using JavaScript's `eval` function. The return value will be called to set a custom text. For example, consider the example snippet below.
+
+<pre class="gray">
+&lt;a href="https://example.com/foo<b><code class="bold">#commento</code></b>"&gt;&lt;/a&gt;
+</pre>
+
+```html
+<script>
+window.commentCustomText = function(count) {
+  if(count === 0) {
+    return "No comments";
+  } else if (count === 1) {
+    return "1 comment";
+  } else {
+    return count + " comments";
+  }
+}
+</script>
+<script src="https://cdn.commento.io/js/count.js" data-custom-text="window.commentoCustomText"></script>
+```
