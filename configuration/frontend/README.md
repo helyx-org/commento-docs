@@ -47,6 +47,15 @@ By default, Commento looks for a `<div>` with `id="commento"`. If you want to lo
 <div class="setting-right">Optional</div>
 <div class="setting-title">data-no-fonts</div>
 
-By default, Commento uses the Source Sans Pro font to present a good design out-of-the-box. If you'd like to disable this so that Commento never loads the font files, you can set this to true. By default, this is true. Available since v1.7.0.
+By default, Commento uses the Source Sans Pro font to present a good design out-of-the-box. If you'd like to disable this so that Commento never loads the font files, you can set this to true. By default, this is true.
+
+<div class="setting-possible">true, false</div>
+
+---
+
+<div class="setting-right">Optional</div>
+<div class="setting-title">data-hide-deleted</div>
+
+By default, deleted comments with undeleted replies are shown with a "[deleted]" tag. If you'd like to disable this, setting this to true will hide deleted comments even if there are legitimate replies underneath. Deleted comments without any undeleted comments underneath are hidden irrespective of the value of this function. By default, this is false.
 
 <div class="setting-possible">true, false</div>
