@@ -30,14 +30,14 @@ Again, remember to change `COMMENTO_ORIGIN` and `COMMENTO_POSTGRES` to appropria
 
 With Docker Compose it's easy to orchestrate multiple services with a single configuration file. And with a single `docker-compose up` command, you can start everything, including a PostgreSQL server. If you don't have a running PostgreSQL server around, this is recommend.
 
-An example and reference `docker-compose.yml` for Commento is given below. The [latest version](https://gitlab.com/commento/commento/blob/master/docker-compose.yml) of the configuration file can always be found in the source repository.
+An example and reference `docker-compose.yml` for Commento is given below. The [latest version](https://gitlab.com/commento/commento/blob/master/docker-compose.yml) of the configuration file can always be found in the source repository (change `SET_VERSION` below appropriately).
 
 ```yaml
 version: '3'
 
 services:
   server:
-    image: registry.gitlab.com/commento/commento:v1.4.0
+    image: registry.gitlab.com/commento/commento:SET_VERSION
     ports:
       - 8080:8080
     environment:
