@@ -59,3 +59,12 @@ By default, Commento uses the Source Sans Pro font to present a good design out-
 By default, deleted comments with undeleted replies are shown with a "[deleted]" tag. If you'd like to disable this, setting this to true will hide deleted comments even if there are legitimate replies underneath. Deleted comments without any undeleted comments underneath are hidden irrespective of the value of this function. By default, this is false.
 
 <div class="setting-possible">true, false</div>
+
+---
+
+<div class="setting-right">Optional</div>
+<div class="setting-title">data-page-id</div>
+
+By default, Commento will use the browser URL to determine which page's comments should be served. If you changed the URL of a page or if you'd like to use a dynamically set custom ID for each page, use this option. Note that the value need not be a URL path; whatever you set as the value here will be used to uniquely identify your page.
+
+<div class="setting-example">data-page-id="/path/to/older/post.html"</div>
