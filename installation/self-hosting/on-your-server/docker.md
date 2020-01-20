@@ -64,7 +64,7 @@ Remember to change `COMMENTO_ORIGIN` to the domain where you want to host Commen
 The above configuration pulls and sets up Commento and PostgreSQL in two separate containers with a persistent database volume. Save the `docker-compose.yml` file somewhere and run the following command to start the services.
 
 ```bash
-$ docker-compose up -f /path/to/docker-compose.yml
+$ docker-compose -f /path/to/docker-compose.yml up
 ```
 
 Open `http://commento.example.com` on web browser and you should be greeted with the login page. Go to the [next step](/installation/self-hosting/register-your-website/README.md) to create an account and register your website.
