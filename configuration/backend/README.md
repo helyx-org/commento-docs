@@ -5,7 +5,7 @@
 Commento's backend is configured by a set of environment variables. If you're executing the binary from the command line, you can set environment variables:
 
 ```bash
-$ export COMMENTO_ORIGIN=commento.example.com  # no whitespace around =
+$ export COMMENTO_ORIGIN=http://commento.example.com  # no whitespace around =
 $ ./commento
 ```
 
