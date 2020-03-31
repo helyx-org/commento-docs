@@ -15,7 +15,8 @@ get_contents() {
     seen_minor_version[$minor_version]=true
 
     rel_exists=false
-    rel="https://dl.commento.io/release/commento-$tag-linux-amd64.tar.gz"
+    rel="https://dl.commento.io/release/commento-$tag-linux-glibc-amd64.tar.gz"
+    sig="https://dl.commento.io/release/commento-$tag-linux-glibc-amd64.tar.gz.asc"
     rel_sha=$(curl --fail -s "$rel" -o - | sha256sum - | cut -f 1 -d ' ')
     exit_code=$?
     if [[ "$exit_code" == "0" ]]; then
@@ -29,15 +30,13 @@ get_contents() {
       printf "#### Latest Release &ndash;&nbsp; \`%s\`\n\n" "$tag"
 
       if [[ "$rel_exists" == "true" ]]; then
-        printf " - [**Linux** &ndash;&nbsp; \`amd64\` &ndash;&nbsp; \`%s\`](%s)  \n" "$tag" "$rel"
-        printf "   \`commento-linux-amd64-%s.tar.gz\`  \n" "$tag"
-        printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
+        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s)\`  \n" "$tag" "$rel"
+        printf "   <p class=\"sha\">%s</p> [(Signature)](%s)\n\n" "$rel_sha" "$sig"
       else
         printf " - No release binaries available for \`%s\`.\n\n" "$tag"
       fi
 
-      printf " - [**Source Code** &ndash;&nbsp; \`%s\`](%s)  \n" "$tag" "$src"
-      printf "   \`commento-%s.tar.gz\`  \n" "$tag"
+      printf " - \`[commento-%s-src.tar.gz](%s)\`  \n" "$tag" "$src"
       printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
 
       printf "#### Previous Releases\n\n"
@@ -48,15 +47,13 @@ get_contents() {
     printf "##### \`%s\`\n\n" "$tag"
 
     if [[ "$rel_exists" == "true" ]]; then
-      printf " - [**Linux** &ndash;&nbsp; \`amd64\`](%s)  \n" "$rel"
-      printf "   \`commento-linux-amd64-%s.tar.gz\`  \n" "$tag"
-      printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
+      printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s)\`  \n" "$tag" "$rel"
+      printf "   <p class=\"sha\">%s</p> [(Signature)](%s)\n\n" "$rel_sha" "$sig"
     else
-      printf " - No release binary available for this release.\n\n"
+      printf " - No release binaries available for this release.\n\n"
     fi
 
-    printf " - [**Source Code**](%s)  \n" "$src"
-    printf "   \`commento-%s.tar.gz\`  \n" "$tag"
+    printf " - \`[commento-%s-src.tar.gz](%s)\`  \n" "$tag" "$src"
     printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
   done
 }
