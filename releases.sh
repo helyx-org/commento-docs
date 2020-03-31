@@ -30,8 +30,8 @@ get_contents() {
       printf "#### Latest Release &ndash;&nbsp; \`%s\`\n\n" "$tag"
 
       if [[ "$rel_exists" == "true" ]]; then
-        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s)\`  \n" "$tag" "$rel"
-        printf "   <p class=\"sha\">%s</p> [(Signature)](%s)\n\n" "$rel_sha" "$sig"
+        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))\`  \n" "$tag" "$rel" "$sig"
+        printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
       else
         printf " - No release binaries available for \`%s\`.\n\n" "$tag"
       fi
@@ -47,8 +47,8 @@ get_contents() {
     printf "##### \`%s\`\n\n" "$tag"
 
     if [[ "$rel_exists" == "true" ]]; then
-      printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s)\`  \n" "$tag" "$rel"
-      printf "   <p class=\"sha\">%s</p> [(Signature)](%s)\n\n" "$rel_sha" "$sig"
+        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))\`  \n" "$tag" "$rel" "$sig"
+        printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
     else
       printf " - No release binaries available for this release.\n\n"
     fi

@@ -1,7 +1,7 @@
 #### Latest Release &ndash;&nbsp; `v1.8.0-rc1`
 
- - `[commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz](https://dl.commento.io/release/commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz)`  
-   <p class="sha">dfaffe4f765e34ce46f61633f4dc3fc7044784bbd3eb4a2b63f6013e6b1cc84a</p> [(Signature)](https://dl.commento.io/release/commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz.asc)
+ - `[commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz](https://dl.commento.io/release/commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz) ([signature](https://dl.commento.io/release/commento-v1.8.0-rc1-linux-glibc-amd64.tar.gz.asc))`  
+   <p class="sha">dfaffe4f765e34ce46f61633f4dc3fc7044784bbd3eb4a2b63f6013e6b1cc84a</p>
 
  - `[commento-v1.8.0-rc1-src.tar.gz](https://dl.commento.io/release/commento-v1.8.0-rc1-src.tar.gz)`  
    <p class="sha">4c7f89271df7cd3b055b4fd0dc69c9f141e12e2f016b6f722a6fcdd0ceead631</p>
