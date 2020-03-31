@@ -15,14 +15,14 @@ get_contents() {
     seen_minor_version[$minor_version]=true
 
     rel_exists=false
-    rel="https://commento-release.s3.amazonaws.com/commento-linux-amd64-$tag.tar.gz"
+    rel="https://dl.commento.io/release/commento-$tag-linux-amd64.tar.gz"
     rel_sha=$(curl --fail -s "$rel" -o - | sha256sum - | cut -f 1 -d ' ')
     exit_code=$?
     if [[ "$exit_code" == "0" ]]; then
       rel_exists=true
     fi
 
-    src="https://gitlab.com/commento/commento/-/archive/$tag/commento-$tag.tar.gz"
+    src="https://dl.commento.io/release/commento-$tag-src.tar.gz"
     src_sha=$(curl -s "$src" -o - | sha256sum - | cut -f 1 -d ' ')
 
     if [[ "$first" == "true" ]]; then
@@ -33,7 +33,7 @@ get_contents() {
         printf "   \`commento-linux-amd64-%s.tar.gz\`  \n" "$tag"
         printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
       else
-        printf " - No release binary available for \`%s\`.\n\n" "$tag"
+        printf " - No release binaries available for \`%s\`.\n\n" "$tag"
       fi
 
       printf " - [**Source Code** &ndash;&nbsp; \`%s\`](%s)  \n" "$tag" "$src"
