@@ -20,5 +20,5 @@ If you prefer to use the [cloud service](https://commento.io) instead of self-ho
 And that's it! You now have Commento on your website with automatic spam detection, fast servers and CDNs, OAuth providers, and much more built-in!
 
 {% hint style='info' %}
-Please note that the cloud version of Commento is not free of cost as it's not sustainable that way. You will be prompted for payment three days after you create an account. All plans have all features and you're can choose to pay as much as you like depending on your financial situation and need.
+Please note that the cloud version of Commento is not free of cost as it's not sustainable that way. You will be prompted for payment three days after you create an account. All plans have all features and you can choose to pay as much as you like depending on your financial situation and need.
 {% endhint %}
