@@ -89,5 +89,6 @@ Implementing SSO comes with added security responsibility on your end. Here's a 
 1. Your HMAC secret key is kept securely. If you lose this, anybody can impersonate requests from Commento and you will leak personal data.
 1. You're verifying signatures before processing data.
 1. You're using a well-audited crypto library for HMAC. Never roll out your own crypto.
+1. You're using a timing safe comparison algorithm to compare the hashes and not a simple string comparison. This is done to prevent [timing attacks](https://en.wikipedia.org/wiki/Timing_attack).
 1. You're authenticating your users properly before sending Commento a response payload. This includes email verification, two-factor authentication, access control lists, and so on.
 1. You're redirecting to the HTTPS version of Commento at the end. Personal data is transmitted in this stage and using plain HTTP is grossly insecure.
