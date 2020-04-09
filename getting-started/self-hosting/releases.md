@@ -9,7 +9,7 @@ If you are building from source, follow the [source installation instructions](i
 Releases are signed by [Adhityaa Chandrasekar's](https://adtac.in) PGP keys. These keys expire every year or so, so different releases may be signed by different keys. Newer key will be signed by the preceeding key as a proof of succession.
 
 <details>
-<summary>Key for releases between 2019-09-29 and 2021-03-22 (latest)</summary>
+<summary><b>Key for signed releases between 2019-09-29 and 2021-03-22 (latest)</b></summary>
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 

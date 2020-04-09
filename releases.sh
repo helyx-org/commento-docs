@@ -44,17 +44,18 @@ get_contents() {
       continue
     fi
 
-    printf "##### \`%s\`\n\n" "$tag"
-
+    printf "<details>\n"
+    printf "<summary><code>%s</code></summary>\n" "$tag"
+    printf "<ul>\n"
     if [[ "$rel_exists" == "true" ]]; then
-        printf " - [commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))  \n" "$tag" "$rel" "$sig"
-        printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
+        printf "<li><p><a href='%s'>commento-%s-linux-glibc-amd64.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$rel" "$tag" "$sig"
+        printf "<p class=\"sha\">%s</p></li>\n\n" "$rel_sha"
     else
-      printf " - No release binaries available for this release.\n\n"
+      printf "<li><p>No release binaries available for this release.</p></li>\n"
     fi
 
-    printf " - [commento-%s-src.tar.gz](%s)  \n" "$tag" "$src"
-    printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
+    printf "<li><p><a href='%s'>commento-%s-src.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$src" "$tag"
+    printf "<p class=\"sha\">%s</p></li>\n\n" "$src_sha"
   done
 }
 
