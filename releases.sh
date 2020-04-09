@@ -30,13 +30,13 @@ get_contents() {
       printf "#### Latest Release &ndash;&nbsp; \`%s\`\n\n" "$tag"
 
       if [[ "$rel_exists" == "true" ]]; then
-        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))\`  \n" "$tag" "$rel" "$sig"
+        printf " - [commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))  \n" "$tag" "$rel" "$sig"
         printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
       else
         printf " - No release binaries available for \`%s\`.\n\n" "$tag"
       fi
 
-      printf " - \`[commento-%s-src.tar.gz](%s)\`  \n" "$tag" "$src"
+      printf " - [commento-%s-src.tar.gz](%s)  \n" "$tag" "$src"
       printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
 
       printf "#### Previous Releases\n\n"
@@ -47,13 +47,13 @@ get_contents() {
     printf "##### \`%s\`\n\n" "$tag"
 
     if [[ "$rel_exists" == "true" ]]; then
-        printf " - \`[commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))\`  \n" "$tag" "$rel" "$sig"
+        printf " - [commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))  \n" "$tag" "$rel" "$sig"
         printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
     else
       printf " - No release binaries available for this release.\n\n"
     fi
 
-    printf " - \`[commento-%s-src.tar.gz](%s)\`  \n" "$tag" "$src"
+    printf " - [commento-%s-src.tar.gz](%s)  \n" "$tag" "$src"
     printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
   done
 }
