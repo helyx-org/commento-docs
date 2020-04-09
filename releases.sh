@@ -56,6 +56,7 @@ get_contents() {
 
     printf "<li><p><a href='%s'>commento-%s-src.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$src" "$tag"
     printf "<p class=\"sha\">%s</p></li>\n\n" "$src_sha"
+    printf "</ul></details>\n"
   done
 }
 
