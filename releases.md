@@ -9,14 +9,6 @@
 #### Previous Releases
 
 <details>
-<summary><b>show</b></summary>
-<ul>
-<li><p>No release binaries available for this release.</p></li>
-<li><p><a href='https://dl.commento.io/release/commento-show-src.tar.gz'>commento-show-src.tar.gz</a></p>
-<p class="sha">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p></li>
-
-</ul></details>
-<details>
 <summary><b>v1.7.0</b></summary>
 <ul>
 <li><p>No release binaries available for this release.</p></li>
@@ -70,5 +62,13 @@
 <li><p>No release binaries available for this release.</p></li>
 <li><p><a href='https://dl.commento.io/release/commento-v1.1.3-src.tar.gz'>commento-v1.1.3-src.tar.gz</a></p>
 <p class="sha">8fe889305d8737b06190d820cc49983152f348198e57d9741d426fa58acbed0c</p></li>
+
+</ul></details>
+<details>
+<summary><b>v1.0.0</b></summary>
+<ul>
+<li><p>No release binaries available for this release.</p></li>
+<li><p><a href='https://dl.commento.io/release/commento-v1.0.0-src.tar.gz'>commento-v1.0.0-src.tar.gz</a></p>
+<p class="sha">4b3409efdf9ffeae75366539ac0557b35ab9d106718454bbada5c2d2fe3dabc8</p></li>
 
 </ul></details>
