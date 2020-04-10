@@ -10,7 +10,7 @@ Commento has been verified to be working on the following hardware architectures
 
 #### Software requirements
 
-To run Commento, you will need access to a PostgreSQL database version 9.5 or later. There aren't any other software requirements, unless you're [compiling from source](/installation/self-hosting/on-your-server/compiling-source.md).
+To run Commento, you will need access to a PostgreSQL database version 9.6 or later. There aren't any other software requirements, unless you're [compiling from source](/installation/self-hosting/on-your-server/compiling-source.md).
 
 ##### Supported operating systems
 
@@ -20,7 +20,7 @@ Nearly every Linux distribution should be able to run Commento, as long as there
 
 Occasionally, using [release binaries](/installation/self-hosting/on-your-server/release-binaries.md) might not work if you use a C library version different from the one the release binary was compiled in or a different `libc` implementation altogether (`glibc`, `musl`, or something else). In that case, you may be required to compile from source for your system. [Compiling](/installation/self-hosting/on-your-server/compiling-source.md) for your architecture should be simple enough.
 
-Commento has been verified to be working on the following distributions: Arch Linux, Debian 9.4
+Commento has been verified to be working on the following distributions: Arch Linux, Debian 9.12
 
 ###### *BSD
 
