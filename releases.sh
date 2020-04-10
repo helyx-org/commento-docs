@@ -16,27 +16,41 @@ get_contents() {
 
     rel_exists=false
     rel="https://dl.commento.io/release/commento-$tag-linux-glibc-amd64.tar.gz"
-    sig="https://dl.commento.io/release/commento-$tag-linux-glibc-amd64.tar.gz.asc"
+    rel_sig="https://dl.commento.io/release/commento-$tag-linux-glibc-amd64.tar.gz.asc"
     rel_sha=$(curl --fail -s "$rel" -o - | sha256sum - | cut -f 1 -d ' ')
     exit_code=$?
     if [[ "$exit_code" == "0" ]]; then
       rel_exists=true
+    else
+      rel_exists=false
     fi
 
     src="https://dl.commento.io/release/commento-$tag-src.tar.gz"
-    src_sha=$(curl -s "$src" -o - | sha256sum - | cut -f 1 -d ' ')
+    src_sha=$(curl --fail -s "$src" -o - | sha256sum - | cut -f 1 -d ' ')
+    src_sig="https://dl.commento.io/release/commento-$tag-src.tar.gz.asc"
+    curl --fail -s "$src_sig" -o /dev/null
+    exit_code=$?
+    if [[ "$exit_code" == "0" ]]; then
+      src_sig_exists=true
+    else
+      src_sig_exists=false
+    fi
 
     if [[ "$first" == "true" ]]; then
-      printf "#### Latest Release &ndash;&nbsp; \`%s\`\n\n" "$tag"
+      printf "#### Latest Release &ndash; %s\n\n" "$tag"
 
       if [[ "$rel_exists" == "true" ]]; then
-        printf " - [commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))  \n" "$tag" "$rel" "$sig"
+        printf " - [commento-%s-linux-glibc-amd64.tar.gz](%s) ([signature](%s))  \n" "$tag" "$rel" "$rel_sig"
         printf "   <p class=\"sha\">%s</p>\n\n" "$rel_sha"
       else
         printf " - No release binaries available for \`%s\`.\n\n" "$tag"
       fi
 
-      printf " - [commento-%s-src.tar.gz](%s)  \n" "$tag" "$src"
+      if [[ "$src_sig_exists" == "true" ]]; then
+        printf " - [commento-%s-src.tar.gz](%s) ([signature](%s))  \n" "$tag" "$src" "$src_sig"
+      else
+        printf " - [commento-%s-src.tar.gz](%s)%s  \n" "$tag" "$src"
+      fi
       printf "   <p class=\"sha\">%s</p>\n\n" "$src_sha"
 
       printf "#### Previous Releases\n\n"
@@ -45,16 +59,20 @@ get_contents() {
     fi
 
     printf "<details>\n"
-    printf "<summary><code>%s</code></summary>\n" "$tag"
+    printf "<summary><b>%s</b></summary>\n" "$tag"
     printf "<ul>\n"
     if [[ "$rel_exists" == "true" ]]; then
-        printf "<li><p><a href='%s'>commento-%s-linux-glibc-amd64.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$rel" "$tag" "$sig"
+        printf "<li><p><a href='%s'>commento-%s-linux-glibc-amd64.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$rel" "$tag" "$rel_sig"
         printf "<p class=\"sha\">%s</p></li>\n\n" "$rel_sha"
     else
       printf "<li><p>No release binaries available for this release.</p></li>\n"
     fi
 
-    printf "<li><p><a href='%s'>commento-%s-src.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$src" "$tag"
+    if [[ "$src_sig_exists" == "true" ]]; then
+      printf "<li><p><a href='%s'>commento-%s-src.tar.gz</a> (<a href='%s'>signature</a>)</p>\n" "$src" "$tag" "$src_sig"
+    else
+      printf "<li><p><a href='%s'>commento-%s-src.tar.gz</a></p>\n" "$src" "$tag"
+    fi
     printf "<p class=\"sha\">%s</p></li>\n\n" "$src_sha"
     printf "</ul></details>\n"
   done
