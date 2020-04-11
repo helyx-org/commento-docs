@@ -1,7 +1,7 @@
 #### Latest Release &ndash; v1.8.0
 
  - [commento-v1.8.0-linux-glibc-amd64.tar.gz](https://dl.commento.io/release/commento-v1.8.0-linux-glibc-amd64.tar.gz) ([signature](https://dl.commento.io/release/commento-v1.8.0-linux-glibc-amd64.tar.gz.asc))  
-   <p class="sha">406f925ca329ee6cb49dd107472b8e32fb5126908ae40af70a8fa7625af4c342</p>
+   <p class="sha">ba775550096f2d3f8e74de28bd1ed5c5c8c8340ba89882b54571f4064d5808c9</p>
 
  - [commento-v1.8.0-src.tar.gz](https://dl.commento.io/release/commento-v1.8.0-src.tar.gz) ([signature](https://dl.commento.io/release/commento-v1.8.0-src.tar.gz.asc))  
    <p class="sha">2e935d76007c168dcc89af2561befb02156c3a0d26aced47086d336dedcabe26</p>
